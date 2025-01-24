@@ -25,7 +25,7 @@ const ChargingStationFinder = () => {
   const findNearestStations = async () => {
     setLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/nearest-stations', {
+      const response = await fetch('https://neo4j-backend.onrender.com/api/nearest-stations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
